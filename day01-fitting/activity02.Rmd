@@ -59,6 +59,12 @@ Here is the "about" page: <https://www.openintro.org/data/index.php?data=hfi>.
 
 In the R code chunk below titled `load-data`, you will type the code that reads in the above linked CSV file by doing the following:
 
+```{r}
+# Load data from the provided URL
+hfi <- readr::read_csv("https://www.openintro.org/data/csv/hfi.csv")
+```
+
+
 -   Rather than downloading this file, uploading to RStudio, then reading it in, explore how to load this file directly from the provided URL with `readr::read_csv` (`{readr}` is part of `{tidyverse}`).
 -   Assign this data set into a data frame named `hfi` (short for "Human Freedom Index").
 
